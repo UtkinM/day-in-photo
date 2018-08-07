@@ -1,0 +1,51 @@
+.today {
+    padding: rem(11) rem(8) rem(7) rem(9);
+
+    color: $color-2;
+    font-family: $font-3;
+
+    background-color: #e6e6e6;
+
+    opacity: 0.8;
+
+    &__day {
+        display: block;
+
+        font-size: rem(16);
+        font-weight: 400;
+        text-align: center;
+
+        @include above($tablet-b) {
+            font-size: rem(36);
+        }
+    }
+
+    &__month {
+        font-size: rem(14);
+        text-align: center;
+
+        @include above($tablet-b) {
+            font-size: rem(18);
+        }
+    }
+
+    &_absolute {
+        position: absolute;
+        top: rem(5);
+        left: rem(5);
+
+        @include above($tablet-b) {
+            top: rem(20);
+            left: rem(20);
+        }
+    }
+
+    &_min {
+        width: rem(310);
+        height: rem(102);
+    }
+
+    @include above($tablet-b) {
+        padding: rem(17) rem(39) rem(25) rem(39);
+    }
+}

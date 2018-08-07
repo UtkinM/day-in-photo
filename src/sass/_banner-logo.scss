@@ -1,0 +1,17 @@
+.banner-logo {
+    display: none;
+    margin-right: rem(20);
+    margin-top: rem(10);
+
+    @include above($tablet) {
+        display: block;
+    }
+
+    &_big {
+        display: none;
+
+        @include above($tablet-b) {
+            display: block;
+        }
+    }
+}
