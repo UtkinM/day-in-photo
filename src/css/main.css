@@ -79,7 +79,8 @@ img {
 
 .calendar__label {
   display: none;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
   font-size: 0.8125rem;
   font-weight: 700;
   line-height: 0.8125rem;
@@ -90,6 +91,11 @@ img {
     display: block;
     margin-bottom: 0.625rem;
   }
+}
+
+.calendar__label-text {
+  display: block;
+  padding-bottom: 0.3125rem;
 }
 
 .calendar__label-name {
@@ -111,6 +117,12 @@ img {
 @media screen and (min-width: 480px) {
   .calendar__list {
     margin-right: -0.625rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .calendar__list {
+    margin-right: -1.25rem;
   }
 }
 
@@ -209,9 +221,11 @@ img {
 }
 
 .today {
+  display: block;
   padding: 0.6875rem 0.5rem 0.4375rem 0.5625rem;
   color: #000000;
   font-family: "Noto Serif", serif;
+  text-decoration: none;
   background-color: #e6e6e6;
   opacity: 0.8;
 }
@@ -244,6 +258,7 @@ img {
   position: absolute;
   top: 0.3125rem;
   left: 0.3125rem;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 480px) {
@@ -329,9 +344,25 @@ img {
   }
 }
 
+@media screen and (min-width: 482px) {
+  .banner-logo {
+    width: calc(22% - 20px);
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 533px) {
+  .banner-logo {
+    width: calc(21% - 20px);
+    margin-bottom: 18px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .banner-logo {
     width: calc(25% - 20px);
+    margin-bottom: 1.1875rem;
+    margin-right: 1.25rem;
   }
 }
 
@@ -367,11 +398,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .day {
-    width: 10rem;
-    height: 6.5rem;
-    margin-top: -0.125rem;
+    width: calc(25% - 20px);
     margin-right: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.125rem;
+    padding-bottom: 14.5%;
+    margin-top: -0.125rem;
   }
 }
 

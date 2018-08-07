@@ -9,8 +9,20 @@
         margin-right: rem(10);
     }
 
+    @include above($tablet + 2px) {
+        width: calc(22% - 20px);
+        margin-bottom: 15px;
+    }
+
+    @include above(533px) {
+        width: calc(21% - 20px);
+        margin-bottom: 18px;
+    }
+
     @include above($tablet-b) {
         width: calc(25% - 20px);
+        margin-bottom: rem(19);
+        margin-right: rem(20);
     }
 
     &_big {

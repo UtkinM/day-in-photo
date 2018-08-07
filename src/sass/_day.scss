@@ -17,11 +17,11 @@
     }
 
     @include above($tablet-b) {
-        width: rem(160);
-        height: rem(104);
-        margin-top: rem(-2);
+        width: calc(25% - 20px);
         margin-right: rem(20);
-        margin-bottom: rem(20);
+        margin-bottom: rem(18);
+        padding-bottom: 14.5%;
+        margin-top: rem(-2);
     }
 
     &:hover &__front {

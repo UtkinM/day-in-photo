@@ -64,7 +64,8 @@
 
     &__label {
         display: none;
-        margin-top: rem(12);
+        margin-top: rem(16);
+        padding-bottom: rem(8);
 
         font-size: rem(13);
         font-weight: 700;
@@ -74,6 +75,11 @@
             display: block;
             margin-bottom: rem(10);
         }
+    }
+
+    &__label-text {
+        display: block;
+        padding-bottom: rem(5);
     }
 
     &__label-name {
@@ -89,6 +95,10 @@
 
         @include above($tablet) {
             margin-right: rem(-10);
+        }
+
+        @include above($tablet-b) {
+            margin-right: rem(-20);
         }
 
         overflow: hidden;
