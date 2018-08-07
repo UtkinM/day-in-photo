@@ -2,11 +2,27 @@
     position: relative;
 
     width: calc(25% - 6px);
-    margin-top: rem(6);
+    margin-bottom: rem(6);
+    margin-right: rem(6);
     padding-bottom: 15.5%;
 
     perspective: rem(1000);
     float: left;
+
+    @include above($tablet) {
+        width: calc(20% - 10px);
+        padding-bottom: 11.8%;
+        margin-right: rem(10);
+        margin-bottom: rem(10);
+    }
+
+    @include above($tablet-b) {
+        width: rem(160);
+        height: rem(104);
+        margin-top: rem(-2);
+        margin-right: rem(20);
+        margin-bottom: rem(20);
+    }
 
     &:hover &__front {
         transform: rotateY(180deg);

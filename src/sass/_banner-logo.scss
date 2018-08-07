@@ -1,10 +1,16 @@
 .banner-logo {
     display: none;
-    margin-right: rem(20);
-    margin-top: rem(10);
+    margin-right: rem(6);
+    float: right;
 
     @include above($tablet) {
         display: block;
+        margin-bottom: rem(30);
+        margin-right: rem(10);
+    }
+
+    @include above($tablet-b) {
+        width: calc(25% - 20px);
     }
 
     &_big {

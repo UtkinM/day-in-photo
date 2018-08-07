@@ -46,10 +46,16 @@
         min-width: rem(310);
         padding-bottom: 65%;
         margin-top: rem(16);
+        margin-bottom: rem(6);
 
         background-image: url("../img/25-big.jpg");
         background-size: cover;
         background-position: center center;
+
+        @include above($tablet) {
+            margin-top: rem(28);
+            margin-bottom: rem(9)
+        }
 
         @include above($tablet-b) {
             margin-top: rem(26);
@@ -76,16 +82,15 @@
         color: $color-4;
     }
 
-    &__list-mob {
+    &__list {
         @include list-reset;
         position: relative;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        overflow: hidden;
+        margin-right: rem(-6);
 
-        //@include above($tablet) {
-        //    display: none;
-        //}
+        @include above($tablet) {
+            margin-right: rem(-10);
+        }
+
+        overflow: hidden;
     }
 }

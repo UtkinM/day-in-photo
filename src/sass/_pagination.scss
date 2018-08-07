@@ -13,6 +13,9 @@
 
         @include above($tablet) {
             display: block;
+            margin-right: rem(20);
+
+            font-size: rem(14);
         }
     }
 
@@ -54,5 +57,9 @@
         font-size: rem(15);
         text-decoration: none;
         color: $color-2;
+
+        @include above($tablet) {
+            font-size: rem(13);
+        }
     }
 }
